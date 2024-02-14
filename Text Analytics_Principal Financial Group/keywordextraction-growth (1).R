@@ -10,7 +10,7 @@ growth=read.csv("management_dataset_all.csv", stringsAsFactors = FALSE)
 ud_model <- udpipe_download_model(language = "english")
 str(ud_model)
 ud_model <- udpipe_load_model(ud_model$file_model)
-x <- udpipe_annotate(ud_model, x = growth$ï..Sentences)
+x <- udpipe_annotate(ud_model, x = growth$Ã¯..Sentences)
 x <- as.data.frame(x)
 
 stats <- subset(x, upos %in% "NOUN")
